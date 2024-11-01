@@ -12,4 +12,9 @@ namespace W9_assignment_template.Models
         public int AggressionLevel { get; set; }
 
     }
+
+    public class GoblinAbility : Ability
+    {
+        public int Taunt { get; set; }
+    }
 }

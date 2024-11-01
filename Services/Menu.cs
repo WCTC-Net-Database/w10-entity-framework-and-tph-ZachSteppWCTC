@@ -63,6 +63,14 @@ public class Menu
             foreach (var character in characters)
             {
                 Console.WriteLine($"Character ID: {character.Id}, Name: {character.Name}, Level: {character.Level}, Room ID: {character.RoomId}");
+                if (character.Abilities.Any())
+                {
+                    Console.WriteLine($"  {character.Name}'s Abilities:");
+                    foreach (var ability in character.Abilities)
+                    {
+                        Console.WriteLine($"  Ability ID: {ability.Id}, Name: {ability.Name}, Desciption: {ability.Description}");
+                    }
+                }
             }
         }
         else

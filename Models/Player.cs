@@ -16,4 +16,9 @@ namespace W9_assignment_template.Models
             Console.WriteLine($"{Name} attacks {target.Name} with a sword!");
         }
     }
+
+    public class PlayerAbility : Ability
+    {
+        public int Shove { get; set; }
+    }
 }

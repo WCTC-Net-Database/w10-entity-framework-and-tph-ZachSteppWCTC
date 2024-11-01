@@ -8,6 +8,7 @@ namespace W9_assignment_template.Migrations
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
+
             migrationBuilder.CreateTable(
                 name: "Rooms",
                 columns: table => new
@@ -54,6 +55,7 @@ namespace W9_assignment_template.Migrations
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
+
             migrationBuilder.DropTable(
                 name: "Characters");
 
